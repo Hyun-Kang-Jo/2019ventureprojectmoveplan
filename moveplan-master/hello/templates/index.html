@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+    <!-- Start section1 -->
+    <section id="index-page-section1" class="jumbotron text-center">
+        <p><br /><br /><br /><br /></p>
+        <p class="index-page-section1-contents-1">당신의 은퇴를 위한 준비</p><br /><br />
+        <p class="index-page-section1-contents-2">MOVEPLAN과 함께하세요</p><br /><br />
+        <p class="index-page-section1-contents-3">나만의 퇴직관리<br />C2B 역경매 플랫폼</p><br /><br />
+        <a href="{% url 'funding' %}" class="btn btn-primary">서비스 시작하기</a><br /><br /><br />
+    </section>
+    <!-- End section1 -->
+
+    <!-- Start section2 -->
+    <section id="index-page-section-2" style="background-color: #159eee">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                    <div class="section-heading" >
+                        <h2 style="color: white"><b><br /><br /><br />MOVEPLAN은 당신의 커리어를 책임집니다</b></h2>
+                    </div>
+                    <div style="color: white">
+                    <p><br />
+                        국민연금
+                        <br /><br /> 국민연금의 의무화로 인해 얼마를 납입하고 계신지 상환금액이 얼마인지 알려드립니다.
+                        <br /><br />
+                        퇴직연금
+                        <br /><br /> 가입되어 계신 퇴직연금들을 정리해드립니다.<br />퇴직과 이직시기, 일시금과 연금 선택 모두 고려해보세요.
+                        <br /><br />
+                        개인연금
+                        <br /><br /> 변액보험상품과 같이 다양한 연금상품에 대한 정보를 알려드립니다.<br />어떤 상품에 가입되어 계신지 확인해보세요.
+                        <br /><br /><br /><br /><br />
+                    </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                    <br /><br /><br />
+                    <img id="index-img" height="" width="auto" src="{% static 'img/index/2/1.png' %}" class="attachment-full img-responsive" alt="">
+                </div>
+            </div>
+        </div>
+    </section><br />
+    <!-- End section2 -->
+
+    <!-- Start section3 -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('/static/img/index/3/1.jpg');"></div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('/static/img/index/3/2.jpg');"></div>
+            </div>
+
+            <div class="item">
+                <div class="fill" style="background-image:url('/static/img/index/3/3.jpg');"></div>
+            </div>
+        </div>
+    </div><br />
+    <!-- End section3 -->
+
+    <!-- Start section4 -->
+    <div>
+        <img src="{% static './img/index/4/1.png' %}" class="index-page-section-4 img-responsive">
+    </div>
+    <!-- End section4 -->
+
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+{% block content %}
+    <section id="contact-page">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>국민연금 <span>확인을</span>위해</h2>
+                <p class="subheading"></p>
+            </div>
+            <div class="row contact-wrap">
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" action="{% url 'management3' %}">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>가입기간 중 기준 소득월액의 평균액 *</label>
+                            <input type="number" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>전체 가입월수 *</label>
+                            <input type="number" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>연금수령 예정년도 *</label>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form=submit-group">
+                            <br>
+                            <h1>MOVEPLAN</h1><span>Move your plan</span></a>
+                            <br><br>
+                            <button type="submit" name="submit" class="btn btn-default submit-button">Submit Message <i class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+</body>
+</html>
